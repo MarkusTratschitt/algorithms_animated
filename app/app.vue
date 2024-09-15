@@ -1,7 +1,8 @@
 <template lang="pug">
 div
     NuxtRouteAnnouncer 
-    NuxtWelcome 
+    NuxtLayout
+    NuxtPage
 </template>
 
 
@@ -35,5 +36,21 @@ textarea {
 *::before, 
 *::after {
     box-sizing: inherit;
+}
+
+
+.button {
+    margin-top: 1em;
+    padding: .6em 1.2em;
+    background-color: #ACAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #45a049;
+    }
 }
 </style>
